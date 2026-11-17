@@ -1,0 +1,13 @@
+(
+echo datasets/
+echo ds_cones/
+echo ds_cones2/
+echo ds_stop/
+echo *.zip
+echo __pycache__/
+echo *.pyc
+echo venv/
+echo .venv/
+echo runs/
+echo *.cache
+) > .gitignore

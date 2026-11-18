@@ -1,6 +1,6 @@
 ﻿# Object Detection and Monocular Distance Estimation for Robotics Navigation
 
-**Candidate:** Rishita Ramesh Kadam
+**Candidate:** Rishita R Kadam
 
 ## Overview
 An end-to-end, edge-optimized perception pipeline designed for autonomous mobile robot navigation. The system detects navigation-critical obstacles (**Traffic Cones**, **Barriers**, and **Stop Signs**), estimates their metric distance from the camera via calibrated pinhole geometry, projects detections onto a **Birds-Eye View (BEV)** navigation plane, and benchmarks **FP32 vs. INT8** quantization for resource-constrained edge hardware.
@@ -79,6 +79,6 @@ An end-to-end, edge-optimized perception pipeline designed for autonomous mobile
 ---
 
 ## Contact
-* **Name:** Rishita Ramesh Kadam
+* **Name:** Rishita R Kadam
 * **Phone:** 8618592259
 * **Email:** kadamrishita3@gmail.com

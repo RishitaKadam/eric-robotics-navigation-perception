@@ -31,12 +31,13 @@ An end-to-end, edge-optimized perception pipeline designed for autonomous mobile
        Annotated Frame (Cone, 1.5m)                                        Top-Down 2D Navigation Grid
 
 ### Repository Structure
-* `configs/config.yaml` - Camera intrinsics (`f = 720 px`), nominal physical object heights, and NMS thresholds
+* `src/get_data.py` - Multi-source dataset retrieval and preparation
 * `src/merge_data.py` - Multi-dataset schema alignment and class-balanced merging
-* `src/train.py` - Transfer learning fine-tuning pipeline
-* `src/distance_estimator.py` - Geometric monocular depth estimator and Birds-Eye View (BEV) homography warper
+* `src/train.py` - YOLOv11n transfer learning fine-tuning pipeline
+* `src/distance.py` - Geometric monocular pinhole depth estimator and Birds-Eye View (BEV) homography warper
 * `src/infer.py` - End-to-end inference script outputting `<Class>, <Distance>m` annotations
-* `src/benchmark.py` - Automated CPU vs. GPU FPS, latency, and model footprint profiler
+* `src/eval_map.py` - Validation accuracy evaluation (`Precision`, `Recall`, `mAP@50`, `mAP@50-95`)
+* `src/optimize.py` - ONNX / OpenVINO INT8 quantization and CPU vs. GPU FPS benchmarking
 * `weights/` - Fine-tuned PyTorch (`best.pt`) and exported ONNX (`best.onnx`) weights
 * `outputs/` - Sample annotated inference frames and BEV perspective warps
 
